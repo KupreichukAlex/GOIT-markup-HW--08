@@ -1,0 +1,16 @@
+.nav-logo {
+    font-family: $logo-font;
+    font-weight: 700;
+    font-size: 26px;
+    color: $logo-color;
+
+    padding-top: 24px;
+    padding-bottom: 20px;
+    margin-right: 93px;
+
+
+&__span {
+    line-height: 1.38;
+    color: $text-color-hover;
+}
+}
