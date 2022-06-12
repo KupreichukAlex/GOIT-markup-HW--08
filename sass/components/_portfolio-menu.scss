@@ -4,14 +4,20 @@
 
 }
 .portfolio-menu {
-    display: flex;
-    justify-content: center;
+   
     margin-bottom: 50px;
 
+&__item {
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+    
 
-&__item:not(:last-child) {
-    margin-right: 8px;
+    @media screen and (max-width:767px) {
+           margin-bottom: 8px;
+        }
 }
+
 
 &__btn {
     padding: 6px 22px;
@@ -43,4 +49,19 @@
 
 }
 
+@media screen and (min-width:320px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+@media screen and (min-width:480px) {}
+
+@media screen and (min-width:768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+@media screen and (min-width:1200px) {}
 }

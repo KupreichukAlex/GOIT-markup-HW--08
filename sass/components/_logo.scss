@@ -13,4 +13,8 @@
     line-height: 1.38;
     color: $text-color-hover;
 }
+@media screen and (max-width:767px) {
+   padding-top: 14px;
+   padding-bottom: 10px;
+}
 }

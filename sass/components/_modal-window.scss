@@ -38,6 +38,9 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
+@media screen and (max-width:1200px) {
+    width: 450px;
+}
 
 
 .backdrop.is-hidden & {
@@ -220,7 +223,9 @@
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
+@media screen and (max-width:1200px) {
+        margin-top: 10px;
+    }
 &:hover,
 &:focus {
     background-color: $modal-btn-hover;
@@ -237,6 +242,11 @@
         text-decoration-line: underline;
 
         color: $text-color-hover;
+        @media screen and (max-width:1200px) {
+                font-size: 12px;
+                letter-spacing: 0.02em;
+               
+            }
     }
 
 

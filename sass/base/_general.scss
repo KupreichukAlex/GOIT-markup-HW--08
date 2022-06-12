@@ -29,17 +29,12 @@ body {
     letter-spacing: 0.03em;
     font-size: 14px;
     font-family: $main-font;
-
+// @media screen and  (min-width: 900px) {
+//     background-color: $text-color-primary ;
+    
+// }
 }
 
-
-
-.container {
-    width: 1200px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .list {
     list-style: none;

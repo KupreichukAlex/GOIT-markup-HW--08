@@ -1,6 +1,5 @@
 .partner {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    
 
 
 
@@ -12,6 +11,58 @@
     font-size: 36px;
 
     color: $text-color-h;
+
+    @media screen and (max-width:1200px) {
+    
+            font-size: 28px;
+        }
+}
+
+&__list {
+    @media screen and (min-width:320px) {
+            // max-width: 479px;
+
+            // &:not(:last-child) {
+            //     margin-bottom: 30px;
+            // }
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        
+    
+        }
+    
+        @media screen and (min-width:480px) {
+            // width: 450px;
+    
+            // &:not(:last-child) {
+            //     margin-bottom: 30px;
+            // }
+                        
+    
+    
+        }
+    
+        @media screen and (min-width:768px) {
+        //     width: 354px;
+    
+    
+        //     &:nth-child(2n-1) {
+        //         margin-right: 30px;
+    
+        //     }
+    
+        //     &:nth-child(-n+2) {
+        //         margin-bottom: 30px;
+    
+        //     }
+    
+    
+        }
+    
+    @media screen and (min-width:1200px) {
+            flex-wrap: nowrap;
+        }
 }
 
 
@@ -36,13 +87,67 @@
 }
 
 
-&__list {
-    display: flex;
+
+
+&__item{
+
+    @media screen and (min-width:200px) {
+            // max-width: 479px;
+    
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+    
+        }
+    
+        @media screen and (max-width:767px) {
+            // width: 450px;
+    
+           
+        &:nth-child(2n-1) {
+            margin-right: 30px;
+        }
+                &:nth-child(-n+4) {
+                    margin-bottom: 30px;
+        
+                }
+    
+        }
+    
+        @media screen and (min-width:768px) {
+            //     width: 354px;
+    
+    
+            //     &:nth-child(2n-1) {
+            //         margin-right: 30px;
+    
+            //     }
+        &:nth-child(n) {
+            margin-right: 30px;
+        }
+    
+        &:nth-child(-n+3) {
+            margin-bottom: 30px;
+    
+        }
+                
+    
+    
+        }
+
+                @media screen and (min-width:1200px) {
+                &:not(:last-child) {
+                        margin-right: 30px;
+                    }
+                }
+    
+
 }
 
-&__item:not(:last-child) {
-    margin-right: 30px;
-}
 
 
 &__icon {

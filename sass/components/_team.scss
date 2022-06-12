@@ -1,12 +1,25 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
     background-color: $button-portfolio;
 
 
 
 &__list {
-    display: flex;
+
+    @media screen and (min-width:320px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+        }
+
+    @media screen and (min-width:1200px) {
+    
+            flex-wrap: nowrap;
+            
+            }
+               
+    
 }
 
 &__title {
@@ -17,6 +30,22 @@
     font-size: 36px;
 
     color: $text-color-h;
+
+    @media screen and (min-width:480px) {
+        margin-bottom: 30px;
+    
+        }
+
+                @media screen and (max-width:1200px) {
+        
+                    font-size: 28px;
+                }
+                
+
+     @media screen and (min-width:1200px) {
+        
+                   margin-bottom: 50px;
+                }
 }
 
 &__item {
@@ -27,11 +56,65 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-   &:not(:last-child) {
-            margin-right: 30px;
-        }
+//    &:not(:last-child) {
+            // margin-right: 30px;
+        // }
+
+                 @media screen and (max-width:479px) {
+        
+                    //  margin-bottom: 30px;
+                    &:not(:last-child) {
+                            margin-bottom: 30px;
+                        }
+                
+                 }
+
+                                 @media screen and (min-width:480px) {
+                                     width: 450px;
+                                    &:not(:last-child) {
+                                            margin-bottom: 30px;
+                                        }
+                                 }
+        
+                 @media screen and (min-width:768px) {
+                     
+                    width: 354px;
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                    }
+                                        &:nth-child(2n-1) {
+                                            margin-right: 30px;
+                    
+                                        }
+
+                 }
+        
+                 @media screen and (min-width:1200px) {
+                    //  width: calc((100% - 4 * 5px) / 2)
+                    width: 270px;
+                     
+        
+
+                                         &:nth-child(1) {
+                                             margin-bottom: 30px;
+                    
+                                         }
+                                                                                 &:nth-child(2) {
+                                                                                     margin-bottom: 30px;
+                                        
+                                                                                 }
+        
+        
+                 }
+        
+                 
 }
 
+&__img{
+    @media screen and (max-width:479px) {
+            width: 100%;
+}
+}
 
 &__player-title {
     margin-bottom: 10px;

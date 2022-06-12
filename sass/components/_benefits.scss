@@ -1,25 +1,69 @@
 .benefits {
-    padding-top: 94px;
-    padding-bottom: 94px;
 
 
 &__list {
-    display: flex;
-}
+
+    @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+    @media screen and (min-width:1200px) {
+    
+           flex-wrap: nowrap;
+        }
+    
+    }
 
 &__item {
-    width: 270px;
-    &:not(:last-child) {
-            margin-right: 30px;
+    
+
+    // width: 270px;
+    // &:not(:last-child) {
+    //         margin-right: 30px;
+    //     }
+        @media screen and (max-width:479px) {
+            max-width: 479px;
+            &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+        }
+    
+        @media screen and (min-width:480px) {
+           
+            &:not(:last-child) {
+                        margin-bottom: 30px;
+                        }
+        }
+    
+        @media screen and (min-width:768px) {
+            width: 354px;
+            &:nth-child(2n-1) {
+                    margin-right: 30px;
+            }
+                    
+                
+        }
+    
+        @media screen and (min-width:1200px) {
+            
+            &:nth-child(2) {
+                    margin-right: 30px;
+                }
         }
 }
 
 &__before {
-    display: block;
-    height: 120px;
-    padding: 25px 100px;
-    margin-bottom: 30px;
-    background-color: $button-portfolio;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+
+    // height: 120px;
+    // padding: 25px 100px;
+    // margin-bottom: 30px;
+    background-color: $button-portfolio;   
 }
 
 &__icon {
@@ -37,6 +81,22 @@
     margin-bottom: 10px;
 
     color: $text-color-h;
+
+
+    @media screen and (max-width:479px) {
+            text-align: center;
+                margin-top: 30px;
+        }
+    
+        @media screen and (min-width:480px) {
+            text-align: center;
+            margin-top: 30px;
+        }
+    
+        @media screen and (min-width:768px) {
+            text-align:start;
+        }
+    
 }
 
 &__descr {
