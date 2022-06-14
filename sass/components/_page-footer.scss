@@ -27,7 +27,7 @@
 
                                           @media screen and (max-width:767px) {
                     
-                                             margin-top: 60px;
+                                            //  margin-top: 60px;
                     
                                           }
         
@@ -44,6 +44,10 @@
                 
             &:first-child {
                     margin-right: 70px;
+                }
+
+                &:nth-child(2){
+                    margin-right: 93px;
                 }
             
                 &:last-child {

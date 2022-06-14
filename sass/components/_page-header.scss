@@ -17,7 +17,7 @@
     
     display: flex;
     align-items: center;
-    
+    width: 100%;
     z-index: 2;
 
 
@@ -25,7 +25,7 @@
 
     &__button {
         z-index: 5;
-        position: absolute;
+        position: fixed;
         top: 21px;
         right: 25px;
         display: inline-flex;
@@ -56,13 +56,19 @@
     &__mobile-menu{
     display: flex;
         align-items: center;
+        width: 100%;
+        
+
+      
+        
+  
         
 
         
 
                 @media screen and (max-width:767px) {
                     display: none;
-                    position: absolute;
+                    position: fixed;
                         top: 0;
                         left: 0;
                         width: 100%;
@@ -85,9 +91,11 @@
 .nav-menu {
     font-weight: 500;
     letter-spacing: 0.02em;
+  
 
     display: flex;
     align-items: center;
+   
 
 @media screen and (max-width:767px) {
         // display: none;
@@ -138,16 +146,39 @@
     
     letter-spacing: 0.02em;
     font-weight: 500;
-@media screen and (min-width:768px) {
-        margin-left: 100px;
+    
+    
+@media screen and (max-width:767px) {
+        margin: 0;
+        padding: 0;
+        display: block;
+        margin-top: 30%;
+        :not(:last-child) {
+                margin-bottom: 32px;
+            }
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+
+    }
+
+    @media screen and (min-width:1200px) {
+        align-items: center;
+        flex-direction: row;
+
+
     }
 &__item{
 
     
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:479px) {
     
-            // margin: 0;
-            // padding: 0;
+        //  :nth-child(1){
+        //     margin-bottom: 32px;
+        //  }
         }
     
 }
@@ -165,16 +196,23 @@
             color: $text-color-hover;
         }
 
-                           @media screen and (max-width:767px) {
+                @media screen and (min-width:320px) {
+                   
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+                           @media screen and (min-width:480px) {
                                padding-top:16px;
                                padding-bottom:16px;
                                font-size: 34px;
                                font-weight: 500;
                            }
-                           @media screen and (max-width:1200px) {
+                           @media screen and (min-width:768px) {
             
                                margin: 0;
                                padding: 0;
+                            font-size: 14px;
                            }
                                                         
 }
@@ -191,29 +229,61 @@
 &__icon {
     margin-right: 10px;
     fill: currentColor;
-}
+
 
 @media screen and (max-width:767px) {
    margin: 0;
    padding: 0;
-   display: block;
+   display: none;
 }
 
- @media screen and (min-width:768px) {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-     
- }
-
- @media screen and (min-width:1200px) {
-    align-items: center;
-    flex-direction: row;
-
-    
-        
  }
  
+}
+
+.social-menu {
+    display: flex;
+    margin-top: 64px;
+
+    @media screen and (min-width:768px) {
+        
+            display: none;
+        }
+
+    &__item {
+        padding: 10px;
+        &:not(:last-child){
+        border-right: 1px solid rgba(33, 33, 33, 0.2) ;
+        }
+                @media screen and (min-width:320px) {
+        
+                padding: 5px;
+        
+                }
+        
+                @media screen and (min-width:480px) {
+                    padding: 10px;
+                }
+    }
+    &__link{
+        
+            font-weight: 500;
+            
+            line-height: 1.22;
+        
+            letter-spacing: 0.02em;
+
+            @media screen and (min-width:320px) {
+            
+                    font-size: 12px;
+                   
+                }
+            
+                @media screen and (min-width:480px) {
+                font-size: 18px;
+                }
+            
+    }
 }
 .current {
     position: relative;

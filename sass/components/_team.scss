@@ -6,18 +6,62 @@
 
 &__list {
 
+
     @media screen and (min-width:320px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+
+            // &:not(:last-child) {
+            //         margin-bottom: 30px;
+            //     }
     
         }
 
-    @media screen and (min-width:1200px) {
+                
+                                 @media screen and (min-width:320px) {
+                
+                
+                                     
+                                 }
+                
+                                 @media screen and (min-width:768px) {
+                         
+                                   justify-content: space-around;
+                                
+
+                                // calc((100% - 4 * 15px) / 2)
+                                   
+                                
+                
+                                    //  &:nth-child(2n-1) {
+                                    //      margin-right: 30px;
+                
+                                    //  }
+                
+                                 }
+                
+                                 @media screen and (min-width:1200px) {
+                                     //  width: calc((100% - 4 * 5px) / 2)
+                                     
+                
+                
+                
+                                    //  :nth-child(1) {
+                                    //      margin-bottom: 30px;
+                
+                                    //  }
+                
+                                    //  :nth-child(2) {
+                                    //      margin-bottom: 30px;
+                
+                                    //  }
+                                         flex-wrap: nowrap;
+                
+                
+                                 }
     
-            flex-wrap: nowrap;
-            
-            }
+                      
                
     
 }
@@ -55,57 +99,36 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    
+    @media screen and (min-width:320px) {
+    margin-bottom: 30px;
+    
+    
+        }
+    
+        @media screen and (min-width:480px) {
+            width: 450px;
+            // &:not(:last-child ){
+            //     margin-bottom: 30px;
+            // }
+    
+            
+        }
+    
+        @media screen and (min-width:768px) {
+           
+            width: 354px;
+    
+        }
+    
+        @media screen and (min-width:1200px) {
+            //  width: calc((100% - 4 * 5px) / 2)
+            width: 270px;
+            margin-bottom: 0;
+    
+        }
 
-//    &:not(:last-child) {
-            // margin-right: 30px;
-        // }
-
-                 @media screen and (max-width:479px) {
-        
-                    //  margin-bottom: 30px;
-                    &:not(:last-child) {
-                            margin-bottom: 30px;
-                        }
-                
-                 }
-
-                                 @media screen and (min-width:480px) {
-                                     width: 450px;
-                                    &:not(:last-child) {
-                                            margin-bottom: 30px;
-                                        }
-                                 }
-        
-                 @media screen and (min-width:768px) {
-                     
-                    width: 354px;
-                &:not(:last-child) {
-                    margin-bottom: 30px;
-                    }
-                                        &:nth-child(2n-1) {
-                                            margin-right: 30px;
-                    
-                                        }
-
-                 }
-        
-                 @media screen and (min-width:1200px) {
-                    //  width: calc((100% - 4 * 5px) / 2)
-                    width: 270px;
-                     
-        
-
-                                         &:nth-child(1) {
-                                             margin-bottom: 30px;
-                    
-                                         }
-                                                                                 &:nth-child(2) {
-                                                                                     margin-bottom: 30px;
-                                        
-                                                                                 }
-        
-        
-                 }
+                 
         
                  
 }
@@ -123,6 +146,7 @@
     font-weight: 500;
 
     color: $text-color-h;
+
 }
 
 &__player-descr {
@@ -133,6 +157,7 @@
 
 &__frame {
     padding: 30px 0;
+
 }
 }
 
