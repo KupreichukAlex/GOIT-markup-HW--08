@@ -1,15 +1,28 @@
 .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
+
+
+
     @media screen and (max-width:1200px) {
             padding-top: 60px;
                 padding-bottom: 60px;
         }
 
+                 @media screen and (max-width:767px) {
+                     padding-top: 120px;
+                     padding-bottom: 120px;
+                 }
+
 }
 .portfolio-menu {
    
-    margin-bottom: 50px;
+   
+
+@media screen and (max-width:767px) {
+    margin: -8px;
+   
+    }
 
 &__item {
     &:not(:last-child){
@@ -18,7 +31,7 @@
     
 
     @media screen and (max-width:767px) {
-           margin-bottom: 8px;
+           margin: 8px;
         }
 }
 

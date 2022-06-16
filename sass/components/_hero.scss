@@ -1,8 +1,7 @@
 .hero {
 
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+   
 
     background: $theme-color-dark;
     
@@ -20,6 +19,8 @@
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                 url(../images/backgrond-images/hero_sm.jpg);
+
+                padding-top: 260px;
     }
 
     @media screen and (min-width:768px) {
@@ -27,7 +28,8 @@ background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/backgrond-images/hero_md.jpg);
-    
+    padding-top: 200px;
+        padding-bottom: 200px;
 
     }
 

@@ -23,8 +23,8 @@
 .modal-wrapper {
     position: absolute;
     background-color: $theme-color-light;
-    width: 528px;
-    height: 581px;
+    
+   
     top: 50%;
     left: 50%;
 
@@ -40,12 +40,16 @@
 
 @media screen and (max-width:479px) {
         width: 90%;
+        height: 600px;
 
     }
 
 
+
+
 @media screen and (min-width:480px) {
     width: 450px;
+    height: 581px;
     
 }
 

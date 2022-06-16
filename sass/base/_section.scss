@@ -24,3 +24,9 @@ section {
         }
     
 }
+section.works {
+    @media screen and (min-width:1200px) {
+            padding-top: 0;
+            
+        }
+}
